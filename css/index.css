@@ -1,11 +1,12 @@
 .bg-pink-ligth {
     background-color: rgb(241, 223, 232);
+    
 }
 .img-cover {
     object-fit: cover;
 }
 .pt-6 {
-    padding-top: 100px;
+    padding-top: 10px;
 }
 .mb-6 {
     margin-bottom: 150px;
