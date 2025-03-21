@@ -8,11 +8,11 @@ function validarUsuario(e) {
     let passwordLocal = localStorage.getItem("password")
 
     if(usuarioLocal === inputUserName.value && passwordLocal.value) {
-        console.log("Bienvenido")
+        alert("Bienvenido")
         localStorage.setItem("activo",true)
         window.location = "../vistas/cursos.html"
     }else{
-        console.log("Datos incorrectos")
+        alert("Datos incorrectos")
     }
         formRegistro.reset()
 }
