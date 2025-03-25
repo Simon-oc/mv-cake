@@ -10,7 +10,8 @@ function registroDatos (e){
         user: inputUserName.value,
         pass: inputUserPass.value,
         logged: false,
-        progreso: 0
+        progreso: 0,
+        certificado: false,
     }
 
     const users = JSON.parse(localStorage.getItem("user")) || [];
@@ -19,7 +20,7 @@ function registroDatos (e){
     localStorage.setItem("user", JSON.stringify(users))
  //   localStorage.setItem("password",inputUserPass.value)
     const cajitaMensaje = document.createElement('p');
-    cajitaMensaje.innerHTML = `Usuario registrado, ya puedes <a href="../vistas/iniciosesion.html">Iniciar Sesión</a>`
+    cajitaMensaje.innerHTML = `Usuario registrado😋, ya puedes <a href="../vistas/iniciosesion.html">Iniciar Sesión</a>`
 
     formRegistro.appendChild(cajitaMensaje)
 
