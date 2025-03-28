@@ -12,7 +12,7 @@ function validarUsuario(e) {
         alert("Bienvenido")
         user[i].logged = true
         localStorage.setItem("user", JSON.stringify(user))
-        //window.location = "../vistas/cursos.html"
+        window.location = "../index.html"
         return
     }     
     }
