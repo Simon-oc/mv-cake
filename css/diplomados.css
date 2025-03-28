@@ -19,3 +19,24 @@
 .text-pink-ligth {
   color: rgb(241, 223, 232);
 }
+
+
+.containermodule {
+  max-width: 600px;
+  margin: auto;
+  background: #FDF4ED;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  background-color: #f9faf7;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress{
+  background-color: #f08db9;
+}
