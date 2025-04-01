@@ -1,14 +1,22 @@
 const users = JSON.parse(localStorage.getItem("user")) || [];
+const linkCerrar = document.querySelector("#cerrar")
+const linkIniciar = document.querySelector("#iniciar")
+
 
 function verificarUsuario(){
   for (let i = 0; i < users.length; i++) {
   if(users[i].logged){
     console.log("Puedes cerrar sesión")
+    linkCerrar.style.display = "block"
+    linkIniciar.style.display = "none"
     return
   }
   
 }
-console.log("Debes iniciar sesión")}
+console.log("Debes iniciar sesión")
+linkCerrar.style.display = "none"
+linkIniciar.style.display = "block"
+}
 
 function desplegar() {
   let menu = document.querySelector('.menu')
