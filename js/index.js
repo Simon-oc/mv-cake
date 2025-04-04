@@ -1,6 +1,7 @@
 const users = JSON.parse(localStorage.getItem("user")) || [];
 const linkCerrar = document.querySelector("#cerrar")
 const linkIniciar = document.querySelector("#iniciar")
+const linkModulo = document.querySelector("#modu-link")
 
 
 function verificarUsuario(){
@@ -9,6 +10,7 @@ function verificarUsuario(){
     console.log("Puedes cerrar sesión")
     linkCerrar.style.display = "block"
     linkIniciar.style.display = "none"
+    linkModulo.style.display = "block"
     return
   }
   
@@ -16,6 +18,7 @@ function verificarUsuario(){
 console.log("Debes iniciar sesión")
 linkCerrar.style.display = "none"
 linkIniciar.style.display = "block"
+linkModulo.style.display = "none"
 }
 
 function desplegar() {

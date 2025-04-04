@@ -2,16 +2,15 @@ const modulosVerificacion = document.querySelector("#modulos")
 const users = JSON.parse(localStorage.getItem("user")) || [];
 
 function verificarUsuario(){
-  for (let i = 0; i < users.length; i++) {
-    if(users[i].logged){
-      alert("Usuario verificado")
+  for (let i = 0; i < users.length; i++) { 
+    if(users[i].logged){ alert("Usuario verificado")
       modulosVerificacion.style.display = "none"
-      return
-    }
-    
+    return 
   }
-  alert("Sesión no iniciada")
+
+} alert("Sesión no iniciada")
   modulosVerificacion.style.display = "block"
+  window.location = "../vistas/iniciosesion.html"
 }
 
 function desplegar() {
@@ -23,7 +22,7 @@ function desplegar() {
     }
   }
 
-let main = document.querySelector('.modules')
+/* let main = document.querySelector('.modules')
 
 cursos.forEach(items => {
     let crear = document.createElement('div')
@@ -45,5 +44,5 @@ cursos.forEach(items => {
     `
 
     main.appendChild(crear)
-});
+}); */
 verificarUsuario()
