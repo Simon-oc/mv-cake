@@ -1,3 +1,19 @@
+const modulosVerificacion = document.querySelector("#modulos")
+const users = JSON.parse(localStorage.getItem("user")) || [];
+
+function verificarUsuario(){
+  for (let i = 0; i < users.length; i++) {
+    if(users[i].logged){
+      alert("Usuario verificado")
+      modulosVerificacion.style.display = "none"
+      return
+    }
+    
+  }
+  alert("Sesión no iniciada")
+  modulosVerificacion.style.display = "block"
+}
+
 function desplegar() {
     let menu = document.querySelector('.menu')
     menu.classList.toggle('desplegar')
@@ -30,3 +46,4 @@ cursos.forEach(items => {
 
     main.appendChild(crear)
 });
+verificarUsuario()
