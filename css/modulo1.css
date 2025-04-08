@@ -1,8 +1,12 @@
 .bg-pink-ligth {
-  background-color: rgb(241, 223, 232);
+  background-color: #f8c5dd;
+  
+}
+.img-cover {
+  object-fit: cover;
 }
 .pt-6 {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 .mb-6 {
   margin-bottom: 150px;
@@ -14,9 +18,5 @@
   color: #f08db9;
 }
 .text-pink-ligth {
-  color: rgb(241, 223, 232);
-}
-.img-1{
-  width: 300px;
-  height: 350px;
+  color: #f08db9;
 }
