@@ -5,6 +5,8 @@ const linkCerrar2 = document.querySelector("#cerrar2")
 const linkIniciar2 = document.querySelector("#iniciar2")
 const linkModulo = document.querySelector("#modu-link")
 const linkModulo2 = document.querySelector("#modu-link2")
+const linkRegistro = document.querySelector("#registrar")
+const linkRegistro2 = document.querySelector("#registrar2")
 
 
 function verificarUsuario(){
@@ -17,6 +19,8 @@ function verificarUsuario(){
     linkIniciar2.style.display = "none"
     linkModulo.style.display = "block"
     linkModulo2.style.display = "block"
+    linkRegistro.style.display = "none"
+    linkRegistro2.style.display = "none"
     return
   }
   
@@ -28,6 +32,8 @@ linkCerrar2.style.display = "none"
 linkIniciar2.style.display = "block"
 linkModulo.style.display = "none"
 linkModulo2.style.display = "none"
+linkRegistro.style.display = "block"
+linkRegistro2.style.display = "block"
 }
 
 function desplegar() {
