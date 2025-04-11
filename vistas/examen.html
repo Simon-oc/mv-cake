@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezado de Página</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/examen.css">
+</head>
+<body>
+    <header class="bg-pink-ligth mb-6">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="../index.html">
+                <img src="../sources/logo sin fondo 2.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-none d-lg-flex justify-content-center w-100 align-items-center">
+                    <div class="d-flex justify-content-between w-25">
+                        <a class="nav-link text-dark" href="./quienessomos.html">QUIÉNES SOMOS</a>
+                        <a class="nav-link text-dark" href="./cursos.html">MÓDULOS</a>
+                    </div>
+                    <div class="text-center w-25">
+                        <a href="../index.html" class="">
+                            <img src="../sources/logo sin fondo 2.png" alt="Logo" style="height: 100px;">
+                        </a>
+                    </div>
+                    <div class="d-flex w-25 justify-content-between">
+                        <a class="nav-link text-dark" href="./diplomados.html">PROGRESO</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./iniciosesion.html">INICIAR SESION</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienessomos.html">QUIÉNES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cursos.html">MÓDULOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./diplomados.html">PROGRESO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iniciosesion.html">INICIAR SESION</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <div class="examen">
+        
+            <h1>Examen Final de Pastelería y Repostería</h1>
+            <form>
+                <h2>Módulo 1: Introducción a la pastelería</h2>
+                <p>1. ¿Cuál es el origen de la pastelería?</p>
+                <input type="text" name="historia" placeholder="Escribe tu respuesta aquí">
+    
+                <p>2. ¿Cuál de los siguientes es un equipamiento básico de cocina?</p>
+                <label><input type="radio" name="equipamiento" value="batidora"> Batidora</label><br>
+                <label><input type="radio" name="equipamiento" value="aspiradora"> Aspiradora</label><br>
+                <label><input type="radio" name="equipamiento" value="televisor"> Televisor</label><br>
+    
+                <p>3. ¿Qué técnica se utiliza para medir ingredientes líquidos?</p>
+                <input type="text" name="tecnica_medicion_liquidos" placeholder="Escribe tu respuesta aquí">
+    
+                <p>4. Verdadero o Falso: La temperatura del horno no afecta el resultado final de un pastel.</p>
+                <label><input type="radio" name="temp_horno" value="verdadero"> Verdadero</label><br>
+                <label><input type="radio" name="temp_horno" value="falso"> Falso</label><br>
+    
+                <h2>Módulo 2: Repostería clásica</h2>
+                <p>5. ¿Cuál es un ingrediente básico en la elaboración de galletas?</p>
+                <label><input type="checkbox" name="ingredientes" value="harina"> Harina</label><br>
+                <label><input type="checkbox" name="ingredientes" value="agua"> Agua</label><br>
+                <label><input type="checkbox" name="ingredientes" value="sal"> Sal</label><br>
+    
+                <p>6. ¿Qué tipo de azúcar se utiliza comúnmente en la repostería?</p>
+                <label><input type="radio" name="tipo_azucar" value="azucar_blanco"> Azúcar blanco</label><br>
+                <label><input type="radio" name="tipo_azucar" value="azucar_moreno"> Azúcar moreno</label><br>
+                <label><input type="radio" name="tipo_azucar" value="azucar_glass"> Azúcar glass</label><br>
+    
+                <p>7. Nombra una receta clásica de tarta y su ingrediente principal.</p>
+                <input type="text" name="receta_clasica" placeholder="Escribe tu respuesta aquí">
+    
+                <h2>Módulo 3: Decoración de pasteles</h2>
+                <p>8. ¿Qué técnica se utiliza para aplicar glaseado en un pastel?</p>
+                <input type="text" name="tecnica_glaseado" placeholder="Escribe tu respuesta aquí">
+    
+                <p>9. Verdadero o Falso: El fondant se puede utilizar para cubrir pasteles y hacer decoraciones.</p>
+                <label><input type="radio" name="fondant" value="verdadero"> Verdadero</label><br>
+                <label><input type="radio" name="fondant" value="falso"> Falso</label><br>
+    
+                <p>10. ¿Qué herramienta se utiliza para hacer decoraciones con manga pastelera?</p>
+                <input type="text" name="herramienta_manga" placeholder="Escribe tu respuesta aquí">
+    
+                <h2>Módulo 4: Panadería artesanal</h2>
+                <p>11. ¿Qué tipo de pan se elabora utilizando un proceso de fermentación?</p>
+                <input type="text" name="tipo_pan" placeholder="Escribe tu respuesta aquí">
+    
+                <p>12. ¿Cuál es la función de la levadura en la panadería?</p>
+                <input type="text" name="funcion_levadura" placeholder="Escribe tu respuesta aquí">
+
+                <p>13. Verdadero o Falso: La bollería se elabora sin necesidad de fermentación.</p>
+            <label><input type="radio" name="fermentacion_bolleria" value="verdadero"> Verdadero</label><br>
+            <label><input type="radio" name="fermentacion_bolleria" value="falso"> Falso</label><br>
+
+            <h2>Módulo 5: Repostería internacional</h2>
+            <p>14. Nombra un postre típico de un país y su ingrediente característico.</p>
+            <input type="text" name="postre_internacional" placeholder="Escribe tu respuesta aquí">
+
+            <p>15. ¿Cuál de los siguientes postres es originario de Francia?</p>
+            <label><input type="radio" name="postre_francia" value="macarons"> Macarons</label><br>
+            <label><input type="radio" name="postre_francia" value="tiramisu"> Tiramisu</label><br>
+            <label><input type="radio" name="postre_francia" value="cheesecake"> Cheesecake</label><br>
+
+            <p>16. ¿Qué técnica especial se utiliza en la repostería japonesa para hacer mochi?</p>
+            <input type="text" name="tecnica_mochi" placeholder="Escribe tu respuesta aquí">
+
+            <p>17. Verdadero o Falso: El tiramisú se elabora con café y mascarpone.</p>
+            <label><input type="radio" name="tiramisú" value="verdadero"> Verdadero</label><br>
+            <label><input type="radio" name="tiramisú" value="falso"> Falso</label><br>
+
+            <h2>Preguntas Generales</h2>
+            <p>18. ¿Cuál es la importancia de la temperatura en la elaboración de pasteles?</p>
+            <input type="text" name="importancia_temperatura" placeholder="Escribe tu respuesta aquí">
+
+            <p>19. Describe brevemente el proceso de elaboración de un bizcocho.</p>
+            <input type="text" name="proceso_bizcocho" placeholder="Escribe tu respuesta aquí">
+
+            <p>20. ¿Qué consejos darías a alguien que está comenzando en el mundo de la pastelería?</p>
+            <input type="text" name="consejos_pasteleria" placeholder="Escribe tu respuesta aquí">
+
+            <button type="submit">Enviar Examen</button>
+        </form>
+    </div>
+
+    <footer class="bg-pink-ligth py-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 order-2 order-md-0">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <h4 style="font-size: 16px;" class="pt-4">Medellín, Colombia</h4>
+                        <button class="btn btn-pink mt-1">CONTÁCTANOS</button>
+                        <div class="d-flex justify-content-center w-100">
+                            <i class="bi bi-instagram text-pink d-block px-2" style="font-size: 30px;"></i>
+                            <i class="bi bi-facebook text-pink" style="font-size: 30px;"></i>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-4 order-0 order-md-1">
+                    <div class="text-center">
+                        <img src="../sources/LOGO ROSA.png" alt=""  class="w-25 img-fluid py-4 ">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 order-1 order-md-2">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <h4 class="text-center" style="font-size: 14px;">UNETE A NUESTRA COMUNIDAD</h4>
+                        <button class="btn btn-pink mt-2"><a href="./vistas/registro.html" class="text-dark">REGISTRARME</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

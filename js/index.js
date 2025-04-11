@@ -1,3 +1,15 @@
+const users = JSON.parse(localStorage.getItem("user")) || [];
+
+function verificarUsuario(){
+  for (let i = 0; i < users.length; i++) {
+  if(users[i].logged){
+    console.log("Puedes cerrar sesión")
+    return
+  }
+  
+}
+console.log("Debes iniciar sesión")}
+
 function desplegar() {
   let menu = document.querySelector('.menu')
   menu.classList.toggle('desplegar')
@@ -8,8 +20,8 @@ function desplegar() {
 }
 
 let slideIndex = 1;
-showSlides(slideIndex);
-
+/* showSlides(slideIndex);
+ */
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -20,7 +32,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+/* function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
@@ -36,5 +48,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   
-}
+} */
 
+verificarUsuario()

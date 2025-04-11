@@ -1,5 +1,5 @@
 .bg-pink-ligth {
-  background-color: rgb(241, 223, 232);
+  background-color: #f8c5dd;
 }
 .img-cover {
   object-fit: cover;
@@ -17,5 +17,58 @@
   color: #f08db9;
 }
 .text-pink-ligth {
-  color: rgb(241, 223, 232);
+  color: #F08DB9;
 }
+
+footer {
+  background-color: #f8c8d3;
+  color: #333;
+}
+
+footer .social-icons i {
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+
+footer .btn-pink {
+  background-color: #f08db9;
+  color: #333;
+}
+
+footer .btn-pink:hover {
+  background-color: #d15796;
+  
+}
+
+footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f8c8d3;
+  color: #333;
+}
+
+footer .social-icons i {
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+
+footer .btn-pink {
+  background-color: #f08db9;
+  color: #333;
+}
+
+footer .btn-pink:hover {
+  background-color: #d15796;
+  
+}
+
+footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+

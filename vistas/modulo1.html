@@ -13,25 +13,47 @@
 <header class="bg-pink-ligth">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand d-lg-none" href="../index.html">
                 <img src="../sources/logo sin fondo 2.png" alt="Logo" style="height: 100px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <div class="d-none d-lg-flex justify-content-center w-100 align-items-center">
+                    <div class="d-flex justify-content-between w-25">
+                        <a class="nav-link text-dark" href="./quienessomos.html">QUIÉNES SOMOS</a>
+                        <a class="nav-link text-dark" href="./cursos.html">MÓDULOS</a>
+                    </div>
+                    <div class="text-center w-25">
+                        <a href="../index.html" class="">
+                            <img src="../sources/logo sin fondo 2.png" alt="Logo" style="height: 100px;">
+                        </a>
+                    </div>
+                    <div class="d-flex w-25 justify-content-between">
+                        <a class="nav-link text-dark" href="./diplomados.html">PROGRESO</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./iniciosesion.html">INICIAR SESIÓN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav d-lg-none">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="./quienessomos.html">QUIENES SOMOS</a>
+                        <a class="nav-link" href="./quienessomos.html">QUIÉNES SOMOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="./cursos.html">CURSOS</a>
+                        <a class="nav-link" href="./cursos.html">MÓDULOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="./diplomados.html">DIPLOMADOS</a>
+                        <a class="nav-link" href="./diplomados.html">PROGRESO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="./iniciosesion.html">INICIAR SESIÓN</a>
+                        <a class="nav-link" href="./iniciosesion.html">INICIAR SESIÓN</a>
                     </li>
                 </ul>
             </div>
@@ -76,35 +98,33 @@
         <button class="btn btn-pink btn-lg mt-2">Completar Curso</button>
     </div>
 </section>
-<footer class="bg-pink-ligth">
+<footer class="bg-pink-ligth py-0">
     <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 order-2 order-md-0">
-                    <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h4 class="pt-5">Medellín, Colombia</h4>
-                        <button class="btn btn-pink mt-2">CONTÁCTANOS</button>
-                        <div class="d-flex justify-content-center w-100">
-                            <i class="bi bi-instagram text-pink d-block px-3" style="font-size: 40px;"></i>
-                            <i class="bi bi-facebook text-pink" style="font-size: 40px;"></i>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-12 col-md-4 order-0 order-md-1">
-                    <div class="text-center">
-                        <img src="../sources/LOGO ROSA.png" alt="" class="w-50 img-fluid py-4">
+        <div class="row">
+            <div class="col-12 col-md-4 order-2 order-md-0">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                    <h4 style="font-size: 16px;" class="pt-4">Medellín, Colombia</h4>
+                    <button class="btn btn-pink mt-1">CONTÁCTANOS</button>
+                    <div class="d-flex justify-content-center w-100">
+                        <i class="bi bi-instagram text-pink d-block px-2" style="font-size: 30px;"></i>
+                        <i class="bi bi-facebook text-pink" style="font-size: 30px;"></i>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 order-1 order-md-2">
-                    <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h4 class="text-center">ÚNETE A NUESTRA COMUNIDAD</h4>
-                        <button class="btn btn-pink mt-2"><a href="./registro.html" class="text-dark">REGISTRARME</a></button>
-                    </div>
+            </div> 
+            <div class="col-12 col-md-4 order-0 order-md-1">
+                <div class="text-center">
+                    <img src="../sources/LOGO ROSA.png" alt=""  class="w-25 img-fluid py-4 ">
+                </div>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                    <h4 class="text-center" style="font-size: 14px;">UNETE A NUESTRA COMUNIDAD</h4>
+                    <button class="btn btn-pink mt-2"><a href="./vistas/registro.html" class="text-dark">REGISTRARME</a></button>
                 </div>
             </div>
         </div>
-    </footer>
-
+    </div>
+</footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
