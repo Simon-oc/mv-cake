@@ -23,7 +23,7 @@
                 <div class="d-none d-lg-flex justify-content-center w-100 align-items-center">
                     <div class="d-flex justify-content-between w-25">
                         <a class="nav-link text-dark" href="./quienessomos.html">QUIÉNES SOMOS</a>
-                        <a class="nav-link text-dark" href="./cursos.html">MÓDULOS</a>
+                        <a id="modu-link2" class="nav-link text-dark" href="./cursos.html">MÓDULOS</a>
                     </div>
                     <div class="text-center w-25">
                         <a href="../index.html" class="">
@@ -37,7 +37,8 @@
                                 <i class="fas fa-user"></i>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="./iniciosesion.html">INICIAR SESIÓN</a>
+                                <a id="cerrar2" class="dropdown-item" href="./vistas/cerrarsesion.html">CERRAR SESIÓN</a>
+                                <a id="iniciar2" class="dropdown-item" href="./iniciosesion.html">INICIAR SESIÓN</a>
                             </div>
                         </div>
                     </div>
@@ -47,13 +48,14 @@
                         <a class="nav-link" href="./quienessomos.html">QUIÉNES SOMOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./cursos.html">MÓDULOS</a>
+                        <a id="modu-link" class="nav-link" href="./cursos.html">MÓDULOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./diplomados.html">PROGRESO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./iniciosesion.html">INICIAR SESIÓN</a>
+                        <a id="cerrar" class="dropdown-item" href="./vistas/cerrarsesion.html">CERRAR SESIÓN</a>
+                        <a id="iniciar" class="nav-link" href="./iniciosesion.html">INICIAR SESIÓN</a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +65,7 @@
 <section class="mb-6">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-            <div class="col pb-4">
+            <div id="modulos" class="col pb-4">
                 <a href="./modulo1.html" class="text-decoration-none text-dark">
                     <div class="card h-100">
                         <img src="../sources/da30c8115805205.6055313ba9648.jpg" class="card-img-top" alt="...">
@@ -79,7 +81,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col pb-4">
+            <div id="modulos" class="col pb-4">
                 <a href="./modulo2.html" class="text-decoration-none text-dark">
                     <div class="card">
                         <img src="../sources/a9ac2abc6091325d15dbb24780ca4e9b.jpg" class="card-img-top" alt="...">
@@ -95,7 +97,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col pb-4">
+            <div id="modulos" class="col pb-4">
                 <a href="./modulo3.html" class="text-decoration-none text-dark">
                     <div class="card h-100">
                         <img src="../sources/e074cd15f21dd50c183a2fff125fadcc.jpg" class="card-img-top" alt="...">
@@ -111,7 +113,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col pb-4">
+            <div id="modulos" class="col pb-4">
                 <a href="./modulo4.html" class="text-decoration-none text-dark">
                     <div class="card">
                         <img src="../sources/45eb2948d85396e3de4717c081c00763.jpg" class="card-img-top" alt="...">
@@ -127,7 +129,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col pb-4">
+            <div id="modulos" class="col pb-4">
                 <a href="./modulo5.html" class="text-decoration-none text-dark">
                     <div class="card h-100">
                         <img src="../sources/a5c4a9b188564b44b2ca89c24fce415c.jpg" class="card-img-top" alt="...">
@@ -178,6 +180,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="../js/cursos.js"></script>
 </body>
 </html>

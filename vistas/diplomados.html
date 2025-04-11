@@ -23,7 +23,7 @@
                 <div class="d-none d-lg-flex justify-content-center w-100 align-items-center">
                     <div class="d-flex justify-content-between w-25">
                         <a class="nav-link text-dark" href="./quienessomos.html">QUIÉNES SOMOS</a>
-                        <a class="nav-link text-dark" href="./cursos.html">MÓDULOS</a>
+                        <a id="modu-link2" class="nav-link text-dark" href="./cursos.html">MÓDULOS</a>
                     </div>
                     <div class="text-center w-25">
                         <a href="../index.html" class="">
@@ -37,7 +37,8 @@
                                 <i class="fas fa-user"></i>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="./iniciosesion.html">INICIAR SESION</a>
+                                <a id="cerrar2" class="dropdown-item" href="./vistas/cerrarsesion.html">CERRAR SESIÓN</a>
+                                <a id="iniciar2" class="dropdown-item" href="./iniciosesion.html">INICIAR SESIÓN</a>
                             </div>
                         </div>
                     </div>
@@ -47,13 +48,14 @@
                         <a class="nav-link" href="./quienessomos.html">QUIÉNES SOMOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./cursos.html">MÓDULOS</a>
+                        <a id="modu-link" class="nav-link" href="./cursos.html">MÓDULOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./diplomados.html">PROGRESO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./iniciosesion.html">INICIAR SESION</a>
+                        <a id="cerrar" class="dropdown-item" href="./vistas/cerrarsesion.html">CERRAR SESIÓN</a>
+                        <a id="iniciar" class="nav-link" href="./iniciosesion.html">INICIAR SESIÓN</a>
                     </li>
                 </ul>
             </div>
@@ -61,6 +63,12 @@
     </nav>
     </header>
 
+    <div class="container mt-5">
+        <div class="usuario text-center">
+            <h1 id="saludo-user">Hola Usuario</h1>
+            <h2 id="progreso">Progreso de módulos</h2>
+        </div>
+    </div>
     <div class="containermodule">
         
         <div class="module">
