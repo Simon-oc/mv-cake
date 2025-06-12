@@ -8,10 +8,9 @@ const linkModulo = document.querySelector("#modu-link")
 const linkModulo2 = document.querySelector("#modu-link2")
 const linkRegistro = document.querySelector("#registrar")
 const linkRegistro2 = document.querySelector("#registrar2")
-const bienvenidaUser = document.querySelector("#registrar2")
-const bienvenidaUser2 = document.querySelector("#registrar2")
-const progresoUser = document.querySelector("#registrar2")
-const registroUser = document.querySelector("#registrar2")
+const bienvenidaUser = document.querySelector("#saludo-user")
+const bienvenidaUser2 = document.querySelector("#saludo-user2")
+const registroUser = document.querySelector("#registrate")
 
 
 function verificarUsuario(){
@@ -28,7 +27,6 @@ function verificarUsuario(){
     linkRegistro2.style.display = "none"
     bienvenidaUser2.style.display = "none"
     bienvenidaUser.style.display = "block"
-    progresoUser.style.display = "block"
     registroUser.style.display = "none"
     return
   }
@@ -45,7 +43,6 @@ linkRegistro.style.display = "block"
 linkRegistro2.style.display = "block"
 bienvenidaUser2.style.display = "block"
 bienvenidaUser.style.display = "none"
-progresoUser.style.display = "none"
 registroUser.style.display = "block"
 }
 
