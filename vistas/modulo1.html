@@ -70,27 +70,47 @@
     <div class="row">
         <div class="col-md-6">
             <h2>Video de Capacitación</h2>
+            
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/Kdbqmxbblms?si=uxTzLeqsx2KusMuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         
         <div class="col-md-6">
             <h2>Preguntas de Evaluación</h2>
-            <form>
-                <div class="form-group">
-                    <label for="pregunta1">1. ¿Cuál es el objetivo del módulo?</label>
-                    <input type="text" class="form-control" id="pregunta1" required>
-                </div>
-                <div class="form-group">
-                    <label for="pregunta2">2. ¿Qué aprendiste sobre el tema?</label>
-                    <input type="text" class="form-control" id="pregunta2" required>
-                </div>
-                <div class="form-group">
-                    <label for="pregunta3">3. ¿Cómo aplicarías lo aprendido?</label>
-                    <input type="text" class="form-control" id="pregunta3" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
-            </form>
+    <!-- Quiz section -->
+    <section class="quiz-section" aria-labelledby="quiz-title">
+      <form id="quiz-form" novalidate>
+        <div class="question" data-correct="a">
+          <div class="question-label">1. ¿Cuál es el objetivo del módulo?</div>
+          <div class="options">
+            <label class="option"><input type="radio" name="q1" value="a" required /> A) Comprender fundamentos del módulo y su propósito.</label>
+            <label class="option"><input type="radio" name="q1" value="b" /> B) Aprender programación avanzada sólo.</label>
+            <label class="option"><input type="radio" name="q1" value="c" /> C) Memorizar respuestas sin entender.</label>
+            <label class="option"><input type="radio" name="q1" value="d" /> D) Ignorar el contenido del módulo.</label>
+          </div>
+        </div>
+        <div class="question" data-correct="b">
+          <div class="question-label">2. ¿Qué aprendiste sobre el tema?</div>
+          <div class="options">
+            <label class="option"><input type="radio" name="q2" value="a" required /> A) Nada relevante sobre el tema.</label>
+            <label class="option"><input type="radio" name="q2" value="b" /> B) Conceptos clave y su aplicación práctica.</label>
+            <label class="option"><input type="radio" name="q2" value="c" /> C) Sólo teorías sin ejemplos.</label>
+            <label class="option"><input type="radio" name="q2" value="d" /> D) Mucho ruido sin información.</label>
+          </div>
+        </div>
+        <div class="question" data-correct="c">
+          <div class="question-label">3. ¿Cómo aplicarías lo aprendido?</div>
+          <div class="options">
+            <label class="option"><input type="radio" name="q3" value="a" required /> A) Ignorando el conocimiento adquirido.</label>
+            <label class="option"><input type="radio" name="q3" value="b" /> B) Aplicando sólo en teoría, no en práctica.</label>
+            <label class="option"><input type="radio" name="q3" value="c" /> C) Integrando el aprendizaje en proyectos reales.</label>
+            <label class="option"><input type="radio" name="q3" value="d" /> D) Dejarlo para otro momento.</label>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn" aria-label="Enviar respuestas">Enviar Respuestas</button>
+      </form>
+      <div id="result" role="alert" aria-live="polite"></div>
+    </section>
         </div>
     </div>
 </div>

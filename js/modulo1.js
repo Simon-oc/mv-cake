@@ -31,6 +31,55 @@ linkModulo.style.display = "none"
 linkModulo2.style.display = "none"
 }
 
+    const form = document.getElementById('quiz-form');
+    const resultDiv = document.getElementById('result');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      resultDiv.textContent = '';
+      const questions = form.querySelectorAll('.question');
+      let total = questions.length;
+      let correctCount = 0;
+      let unanswered = false;
+      questions.forEach(q => {
+        const correctAnswer = q.getAttribute('data-correct');
+        const selected = q.querySelector('input[type="radio"]:checked');
+        // Remove previous styling
+        q.querySelectorAll('label.option').forEach(label => {
+          label.classList.remove('correct', 'wrong');
+          label.querySelector('input').disabled = false;
+        });
+        
+if (!selected) {
+          unanswered = true;
+          return;
+        }
+        if (selected.value === correctAnswer) {
+          correctCount++;
+          const correctLabel = selected.closest('label.option');
+          correctLabel.classList.add('correct');
+        } else {
+          const selectedLabel = selected.closest('label.option');
+          selectedLabel.classList.add('wrong');
+          // Highlight correct answer
+          const options = q.querySelectorAll('input[type="radio"]');
+          options.forEach(opt => {
+            if (opt.value === correctAnswer) {
+              opt.closest('label.option').classList.add('correct');
+            }
+          });
+        }
+        // Disable all options after submission
+        q.querySelectorAll('input[type="radio"]').forEach(input => input.disabled = true);
+      });
+      if (unanswered) {
+        resultDiv.style.color = 'var(--error-color)';
+        resultDiv.textContent = 'Por favor, responde todas las preguntas antes de enviar.';
+        return;
+      }
+      resultDiv.style.color = correctCount === total ? 'var(--correct-color)' : 'var(--primary-color)';
+      resultDiv.textContent = `Has respondido correctamente ${correctCount} de ${total} preguntas.`;
+    });
+
 function desplegar() {
     let menu = document.querySelector('.menu')
     menu.classList.toggle('desplegar')
