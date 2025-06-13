@@ -1,0 +1,71 @@
+.bg-pink-ligth {
+  background-color: #f8c5dd;
+  
+}
+.img-cover {
+  object-fit: cover;
+}
+.pt-6 {
+  padding-top: 10px;
+}
+.mb-6 {
+  margin-bottom: 150px;
+}
+.btn-pink {
+  background-color:#f08db9;
+}
+.text-pink {
+  color: #f08db9;
+}
+.text-pink-ligth {
+  color: #f08db9;
+}
+
+
+
+.containermodule {
+  max-width: 600px;
+  margin: auto;
+  background: #ffecdd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  background-color: #f9faf7;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress{
+  background-color: #f08db9;
+}
+
+footer {
+  background-color: #f8c8d3;
+  color: #333;
+}
+
+footer .social-icons i {
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+
+footer .btn-pink {
+  background-color: #f08db9;
+  color: #333;
+}
+
+footer .btn-pink:hover {
+  background-color: #d15796;
+  
+}
+
+footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+

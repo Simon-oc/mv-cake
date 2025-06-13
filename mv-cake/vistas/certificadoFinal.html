@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="../css/certificadoFinal.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .contenedor-padre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 68px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border: 10px solid #f08db9;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px 40px 60px 40px;
+            text-align: center;
+        }
+        .certificate img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .certificate h1 {
+            font-size: 2.5rem;
+            color: #000000;
+            margin: 10px 0;
+        }
+         .certificate h2 {
+            font-size: 2rem;
+            color: #000000;
+            margin: 20px 0;
+        }
+        .certificate p {
+            font-size: 1.2rem;
+            color: #000000;
+            margin: 10px 0 40px 0;
+        }
+        /* Área de firmas */
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+        .signature {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+            position: relative;
+            font-style: normal;
+            color: #000000;
+        }
+        /* Línea para firma */
+        .signature .line {
+            width: 180px;
+            height: 2px;
+            background-color: #000000;
+            margin-bottom: 8px;
+            border-radius: 2px;
+        }
+        .signature .name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+        .signature .title {
+            font-weight: 400;
+            color: #666666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        #descargarPDF {
+            background-color:#f08db9;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 40px;
+        }
+        /* Responsive */
+        @media (max-width: 640px) {
+            .signatures {
+                flex-direction: column;
+                gap: 30px;
+                padding: 0;
+            }
+            .signature {
+                margin: 0 auto;
+            }
+            .signature .line {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <header class="bg-pink-ligth">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="../index.html">
+            <img src="../sources/logo sin fondo 2.png" alt="Logo" style="height: 100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-none d-lg-flex justify-content-center w-100 align-items-center">
+                <div class="d-flex justify-content-between w-25">
+                    <a class="nav-link text-dark" href="./quienessomos.html">QUIÉNES SOMOS</a>
+                    <a id="modu-link2" class="nav-link text-dark" href="./cursos.html">MÓDULOS</a>
+                </div>
+                <div class="text-center w-25">
+                    <a href="../index.html" class="">
+                        <img src="../sources/logo sin fondo 2.png" alt="Logo" style="height: 100px;">
+                    </a>
+
+                </div>
+                <div class="d-flex w-25 justify-content-between">
+                    <a class="nav-link text-dark" href="./diplomados.html">PROGRESO</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a id="cerrar2" class="dropdown-item" href="./cerrarsesion.html">CERRAR SESIÓN</a>
+                            <a id="iniciar2" class="dropdown-item" href="./iniciosesion.html">INICIAR SESIÓN</a>
+                            <a id="registrar2" class="dropdown-item" href="./registro.html">REGISTRARME</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav d-lg-none">
+                <li class="nav-item">
+                    <a class="nav-link" href="./quienessomos.html">QUIÉNES SOMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a id="modu-link" class="nav-link" href="./cursos.html">MÓDULOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./diplomados.html">PROGRESO</a>
+                </li>
+                <li class="nav-item">
+                    <a id="cerrar" class= "nav-link" href="./cerrarsesion.html">CERRAR SESIÓN</a>
+                    <a id="iniciar" class= "nav-link" href="./iniciosesion.html">INICIAR SESIÓN</a>
+                    <a id="registrar" class= "nav-link" href="./registro.html">REGISTRARME</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<div class="contenedor-padre">
+        <div class="container">
+            <div class="certificate">
+                <img src="../sources/LOGO ROSA.png" alt="Logo" class="loguito"/>
+                <h1>Diploma de Graduación</h1>
+                <h1>Nombre Del Alumno</h1>
+                <p>Demostró sus conocimientos en el MOOC</p>
+                <h2>Mv Cake</h2>
+                <div class="signatures" aria-label="Firmas de los creadores del curso">
+                    <div class="signature">
+                       <div class="name">Simón Ossa</div>
+                        <div class="line"></div>
+                        <div class="title">Creador</div>
+                    </div>
+                    <div class="signature">
+                       <div class="name">María Vargas</div>
+                        <div class="line"></div>
+                        <div class="title">Creadora</div>
+                    </div>
+                    <div class="signature">
+                       <div class="name">Valentina Velez</div>
+                        <div class="line"></div>
+                        <div class="title">Creadora</div>
+                    </div>
+                </div>
+                <button id="descargarPDF">Descargar PDF</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
